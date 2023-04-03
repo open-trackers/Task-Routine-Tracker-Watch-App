@@ -15,7 +15,7 @@ import TrackerLib
 import TroutLib
 
 @main
-struct Gym_MRoutine_Tracker_Watch_App: App {
+struct Watch_App: App {
     @Environment(\.scenePhase) var scenePhase
 
     // MARK: - Locals
