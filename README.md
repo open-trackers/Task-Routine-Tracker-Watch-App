@@ -1,4 +1,4 @@
-# Gym MRoutine Tracker
+# Task Routine Tracker
 
 _A minimal & focused wrist-based task routine tracker_
 
