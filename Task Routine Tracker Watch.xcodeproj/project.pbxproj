@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4004528F29E399EA00B0D7B2 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4004528E29E399EA00B0D7B2 /* WidgetKit.framework */; };
+		4004529129E399EA00B0D7B2 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4004529029E399EA00B0D7B2 /* SwiftUI.framework */; };
+		4004529429E399EA00B0D7B2 /* WidgetTRTBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4004529329E399EA00B0D7B2 /* WidgetTRTBundle.swift */; };
+		4004529629E399EA00B0D7B2 /* WidgetTRT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4004529529E399EA00B0D7B2 /* WidgetTRT.swift */; };
+		4004529829E399EA00B0D7B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4004529729E399EA00B0D7B2 /* Assets.xcassets */; };
 		40A1A8C9294550620042966C /* TroutUI in Frameworks */ = {isa = PBXBuildFile; productRef = 40A1A8C8294550620042966C /* TroutUI */; };
 		40A70CAB293BA22D008688F8 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 40A70CA9293BA22D008688F8 /* LICENSE */; };
 		40A70CAC293BA22D008688F8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 40A70CAA293BA22D008688F8 /* README.md */; };
@@ -46,6 +51,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4004528D29E399EA00B0D7B2 /* WidgetTRTExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetTRTExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4004528E29E399EA00B0D7B2 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		4004529029E399EA00B0D7B2 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		4004529329E399EA00B0D7B2 /* WidgetTRTBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetTRTBundle.swift; sourceTree = "<group>"; };
+		4004529529E399EA00B0D7B2 /* WidgetTRT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetTRT.swift; sourceTree = "<group>"; };
+		4004529729E399EA00B0D7B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4004529929E399EA00B0D7B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		400452A029E39AA500B0D7B2 /* WidgetTRTExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WidgetTRTExtension.entitlements; sourceTree = "<group>"; };
 		40A70CA9293BA22D008688F8 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		40A70CAA293BA22D008688F8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		40CE13FD293B0DBB00462D62 /* Task Routine Tracker Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Task Routine Tracker Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +72,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4004528A29E399EA00B0D7B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4004529129E399EA00B0D7B2 /* SwiftUI.framework in Frameworks */,
+				4004528F29E399EA00B0D7B2 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40CE1400293B0DBB00462D62 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -74,12 +96,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4004529229E399EA00B0D7B2 /* WidgetTRT */ = {
+			isa = PBXGroup;
+			children = (
+				4004529329E399EA00B0D7B2 /* WidgetTRTBundle.swift */,
+				4004529529E399EA00B0D7B2 /* WidgetTRT.swift */,
+				4004529729E399EA00B0D7B2 /* Assets.xcassets */,
+				4004529929E399EA00B0D7B2 /* Info.plist */,
+			);
+			path = WidgetTRT;
+			sourceTree = "<group>";
+		};
 		40CE13F6293B0DBB00462D62 = {
 			isa = PBXGroup;
 			children = (
+				400452A029E39AA500B0D7B2 /* WidgetTRTExtension.entitlements */,
 				40A70CA9293BA22D008688F8 /* LICENSE */,
 				40A70CAA293BA22D008688F8 /* README.md */,
 				40CE1407293B0DBB00462D62 /* Sources */,
+				4004529229E399EA00B0D7B2 /* WidgetTRT */,
 				40CE13FE293B0DBB00462D62 /* Products */,
 				40CE1456293B100800462D62 /* Frameworks */,
 			);
@@ -90,6 +125,7 @@
 			children = (
 				40CE13FD293B0DBB00462D62 /* Task Routine Tracker Watch.app */,
 				40CE1403293B0DBB00462D62 /* Task Routine Tracker.app */,
+				4004528D29E399EA00B0D7B2 /* WidgetTRTExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,6 +146,8 @@
 		40CE1456293B100800462D62 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4004528E29E399EA00B0D7B2 /* WidgetKit.framework */,
+				4004529029E399EA00B0D7B2 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -126,6 +164,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4004528C29E399EA00B0D7B2 /* WidgetTRTExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4004529C29E399EA00B0D7B2 /* Build configuration list for PBXNativeTarget "WidgetTRTExtension" */;
+			buildPhases = (
+				4004528929E399EA00B0D7B2 /* Sources */,
+				4004528A29E399EA00B0D7B2 /* Frameworks */,
+				4004528B29E399EA00B0D7B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WidgetTRTExtension;
+			productName = WidgetTRTExtension;
+			productReference = 4004528D29E399EA00B0D7B2 /* WidgetTRTExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		40CE13FC293B0DBB00462D62 /* Task Routine Tracker Watch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40CE1417293B0DBC00462D62 /* Build configuration list for PBXNativeTarget "Task Routine Tracker Watch" */;
@@ -174,9 +229,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1410;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					4004528C29E399EA00B0D7B2 = {
+						CreatedOnToolsVersion = 14.3;
+					};
 					40CE13FC293B0DBB00462D62 = {
 						CreatedOnToolsVersion = 14.1;
 					};
@@ -205,11 +263,20 @@
 			targets = (
 				40CE13FC293B0DBB00462D62 /* Task Routine Tracker Watch */,
 				40CE1402293B0DBB00462D62 /* Task Routine Tracker */,
+				4004528C29E399EA00B0D7B2 /* WidgetTRTExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4004528B29E399EA00B0D7B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4004529829E399EA00B0D7B2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40CE13FB293B0DBB00462D62 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -231,6 +298,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4004528929E399EA00B0D7B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4004529629E399EA00B0D7B2 /* WidgetTRT.swift in Sources */,
+				4004529429E399EA00B0D7B2 /* WidgetTRTBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		40CE13FF293B0DBB00462D62 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -251,6 +327,67 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		4004529A29E399EA00B0D7B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WidgetTRTExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J735QC5U38;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetTRT/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WidgetTRT;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.openalloc.grout.watch.WidgetTRT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4004529B29E399EA00B0D7B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WidgetTRTExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J735QC5U38;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetTRT/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WidgetTRT;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.openalloc.grout.watch.WidgetTRT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		40CE1411293B0DBC00462D62 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -473,6 +610,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4004529C29E399EA00B0D7B2 /* Build configuration list for PBXNativeTarget "WidgetTRTExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4004529A29E399EA00B0D7B2 /* Debug */,
+				4004529B29E399EA00B0D7B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		40CE13FA293B0DBB00462D62 /* Build configuration list for PBXProject "Task Routine Tracker Watch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
