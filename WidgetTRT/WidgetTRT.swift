@@ -1,66 +1,36 @@
 //
 //  WidgetTRT.swift
-//  WidgetTRT
 //
-//  Created by Reed Esau on 4/9/23.
+// Copyright 2023  OpenAlloc LLC
+//
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at https://mozilla.org/MPL/2.0/.
 //
 
-import WidgetKit
 import SwiftUI
+import WidgetKit
 
-struct Provider: TimelineProvider {
-    func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date())
-    }
-
-    func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date())
-        completion(entry)
-    }
-
-    func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        var entries: [SimpleEntry] = []
-
-        // Generate a timeline consisting of five entries an hour apart, starting from the current date.
-        let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate)
-            entries.append(entry)
-        }
-
-        let timeline = Timeline(entries: entries, policy: .atEnd)
-        completion(timeline)
-    }
-}
-
-struct SimpleEntry: TimelineEntry {
-    let date: Date
-}
-
-struct WidgetTRTEntryView : View {
-    var entry: Provider.Entry
-
-    var body: some View {
-        Text(entry.date, style: .time)
-    }
-}
+import TroutLib
+import TroutUI
 
 struct WidgetTRT: Widget {
     let kind: String = "WidgetTRT"
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
-            WidgetTRTEntryView(entry: entry)
+            WidgetView(entry: entry)
         }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .configurationDisplayName("Task Routines")
+        .description("Time since last task routine.")
     }
 }
 
 struct WidgetTRT_Previews: PreviewProvider {
     static var previews: some View {
-        WidgetTRTEntryView(entry: SimpleEntry(date: Date()))
-            .previewContext(WidgetPreviewContext(family: .systemSmall))
+        let entry = WidgetEntry(timeInterval: 1000)
+        return WidgetView(entry: entry)
+            .accentColor(.blue)
+            .previewContext(WidgetPreviewContext(family: .accessoryCircular))
     }
 }

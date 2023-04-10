@@ -12,6 +12,7 @@
 		4004529429E399EA00B0D7B2 /* WidgetTRTBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4004529329E399EA00B0D7B2 /* WidgetTRTBundle.swift */; };
 		4004529629E399EA00B0D7B2 /* WidgetTRT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4004529529E399EA00B0D7B2 /* WidgetTRT.swift */; };
 		4004529829E399EA00B0D7B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4004529729E399EA00B0D7B2 /* Assets.xcassets */; };
+		400452A629E39C8600B0D7B2 /* TroutUI in Frameworks */ = {isa = PBXBuildFile; productRef = 400452A529E39C8600B0D7B2 /* TroutUI */; };
 		40A1A8C9294550620042966C /* TroutUI in Frameworks */ = {isa = PBXBuildFile; productRef = 40A1A8C8294550620042966C /* TroutUI */; };
 		40A70CAB293BA22D008688F8 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 40A70CA9293BA22D008688F8 /* LICENSE */; };
 		40A70CAC293BA22D008688F8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 40A70CAA293BA22D008688F8 /* README.md */; };
@@ -76,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				400452A629E39C8600B0D7B2 /* TroutUI in Frameworks */,
 				4004529129E399EA00B0D7B2 /* SwiftUI.framework in Frameworks */,
 				4004528F29E399EA00B0D7B2 /* WidgetKit.framework in Frameworks */,
 			);
@@ -177,6 +179,9 @@
 			dependencies = (
 			);
 			name = WidgetTRTExtension;
+			packageProductDependencies = (
+				400452A529E39C8600B0D7B2 /* TroutUI */,
+			);
 			productName = WidgetTRTExtension;
 			productReference = 4004528D29E399EA00B0D7B2 /* WidgetTRTExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -676,6 +681,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		400452A529E39C8600B0D7B2 /* TroutUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TroutUI;
+		};
 		40A1A8C8294550620042966C /* TroutUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = TroutUI;
