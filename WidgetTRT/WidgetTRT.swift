@@ -28,7 +28,7 @@ struct WidgetTRT: Widget {
 
 struct WidgetTRT_Previews: PreviewProvider {
     static var previews: some View {
-        let entry = WidgetEntry(timeInterval: 1000)
+        let entry = WidgetEntry(name: "TODO", timeInterval: 1000)
         return WidgetView(entry: entry)
             .accentColor(.blue)
             .previewContext(WidgetPreviewContext(family: .accessoryCircular))
