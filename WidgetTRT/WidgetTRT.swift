@@ -23,6 +23,7 @@ struct WidgetTRT: Widget {
         }
         .configurationDisplayName("Task Routines")
         .description("Time since last task routine.")
+        .supportedFamilies([.accessoryCircular])
     }
 }
 
