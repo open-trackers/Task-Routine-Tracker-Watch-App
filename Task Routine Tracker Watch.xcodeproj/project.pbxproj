@@ -14,11 +14,15 @@
 		40CE1404293B0DBB00462D62 /* Task Routine Tracker.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 40CE1403293B0DBB00462D62 /* Task Routine Tracker.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		40CE1409293B0DBB00462D62 /* WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE1408293B0DBB00462D62 /* WatchApp.swift */; };
 		40CE140D293B0DBC00462D62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40CE140C293B0DBC00462D62 /* Assets.xcassets */; };
-		40CE1458293B100800462D62 /* TroutLib in Frameworks */ = {isa = PBXBuildFile; productRef = 40CE1457293B100800462D62 /* TroutLib */; };
 		40CE145D293B113600462D62 /* Compactor in Frameworks */ = {isa = PBXBuildFile; productRef = 40CE145C293B113600462D62 /* Compactor */; };
 		40CE14B0293B153700462D62 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE1490293B153700462D62 /* ContentView.swift */; };
 		40CE14C6293B153700462D62 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40CE14AB293B153700462D62 /* Preview Assets.xcassets */; };
-		40EBE1C929634FEA004B9189 /* TroutUI in Frameworks */ = {isa = PBXBuildFile; productRef = 40EBE1C829634FEA004B9189 /* TroutUI */; };
+		40E61D9F29EA176D006DB181 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4004528E29E399EA00B0D7B2 /* WidgetKit.framework */; };
+		40E61DA029EA176D006DB181 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4004529029E399EA00B0D7B2 /* SwiftUI.framework */; };
+		40E61DA329EA176D006DB181 /* WidgetTRT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E61DA229EA176D006DB181 /* WidgetTRT.swift */; };
+		40E61DA529EA176D006DB181 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40E61DA429EA176D006DB181 /* Assets.xcassets */; };
+		40E61DA929EA176D006DB181 /* WidgetTRTExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 40E61D9E29EA176D006DB181 /* WidgetTRTExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		40E61DAF29EA1782006DB181 /* TroutUI in Frameworks */ = {isa = PBXBuildFile; productRef = 40E61DAE29EA1782006DB181 /* TroutUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +32,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 40CE1402293B0DBB00462D62;
 			remoteInfo = "Task Routine Tracker Watch App";
+		};
+		40E61DA729EA176D006DB181 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40CE13F7293B0DBB00462D62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40E61D9D29EA176D006DB181;
+			remoteInfo = WidgetTRTExtension;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -43,9 +54,22 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		40E61DAD29EA176E006DB181 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				40E61DA929EA176D006DB181 /* WidgetTRTExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4004528E29E399EA00B0D7B2 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		4004529029E399EA00B0D7B2 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		40A70CA9293BA22D008688F8 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		40A70CAA293BA22D008688F8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		40CE13FD293B0DBB00462D62 /* Task Routine Tracker Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Task Routine Tracker Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +80,11 @@
 		40CE145A293B109400462D62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40CE1490293B153700462D62 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		40CE14AB293B153700462D62 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		40E61D9E29EA176D006DB181 /* WidgetTRTExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetTRTExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		40E61DA229EA176D006DB181 /* WidgetTRT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetTRT.swift; sourceTree = "<group>"; };
+		40E61DA429EA176D006DB181 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40E61DA629EA176D006DB181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40E61DB029EA17A7006DB181 /* WidgetTRTExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WidgetTRTExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +92,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40CE1458293B100800462D62 /* TroutLib in Frameworks */,
 				40BD218F293FDD0500B17BEA /* TroutLib in Frameworks */,
 				40A1A8C9294550620042966C /* TroutUI in Frameworks */,
 				40CE145D293B113600462D62 /* Compactor in Frameworks */,
-				40EBE1C929634FEA004B9189 /* TroutUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40E61D9B29EA176D006DB181 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40E61DAF29EA1782006DB181 /* TroutUI in Frameworks */,
+				40E61DA029EA176D006DB181 /* SwiftUI.framework in Frameworks */,
+				40E61D9F29EA176D006DB181 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,9 +114,11 @@
 		40CE13F6293B0DBB00462D62 = {
 			isa = PBXGroup;
 			children = (
+				40E61DB029EA17A7006DB181 /* WidgetTRTExtension.entitlements */,
 				40A70CA9293BA22D008688F8 /* LICENSE */,
 				40A70CAA293BA22D008688F8 /* README.md */,
 				40CE1407293B0DBB00462D62 /* Sources */,
+				40E61DA129EA176D006DB181 /* WidgetTRT */,
 				40CE13FE293B0DBB00462D62 /* Products */,
 				40CE1456293B100800462D62 /* Frameworks */,
 			);
@@ -90,6 +129,7 @@
 			children = (
 				40CE13FD293B0DBB00462D62 /* Task Routine Tracker Watch.app */,
 				40CE1403293B0DBB00462D62 /* Task Routine Tracker.app */,
+				40E61D9E29EA176D006DB181 /* WidgetTRTExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,6 +150,8 @@
 		40CE1456293B100800462D62 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4004528E29E399EA00B0D7B2 /* WidgetKit.framework */,
+				4004529029E399EA00B0D7B2 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -120,7 +162,17 @@
 				40CE14AB293B153700462D62 /* Preview Assets.xcassets */,
 			);
 			name = "Preview Content";
-			path = "../../../_archive/_watchapp_archive/OldStuff/Source/Preview Content";
+			path = "Sources/Preview Content";
+			sourceTree = SOURCE_ROOT;
+		};
+		40E61DA129EA176D006DB181 /* WidgetTRT */ = {
+			isa = PBXGroup;
+			children = (
+				40E61DA229EA176D006DB181 /* WidgetTRT.swift */,
+				40E61DA429EA176D006DB181 /* Assets.xcassets */,
+				40E61DA629EA176D006DB181 /* Info.plist */,
+			);
+			path = WidgetTRT;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,22 +202,42 @@
 				40CE13FF293B0DBB00462D62 /* Sources */,
 				40CE1400293B0DBB00462D62 /* Frameworks */,
 				40CE1401293B0DBB00462D62 /* Resources */,
+				40E61DAD29EA176E006DB181 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40E61DA829EA176D006DB181 /* PBXTargetDependency */,
+			);
+			name = "Task Routine Tracker";
+			packageProductDependencies = (
+				40CE145C293B113600462D62 /* Compactor */,
+				40BD218E293FDD0500B17BEA /* TroutLib */,
+				40A1A8C8294550620042966C /* TroutUI */,
+			);
+			productName = "Task Routine Tracker Watch App";
+			productReference = 40CE1403293B0DBB00462D62 /* Task Routine Tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		40E61D9D29EA176D006DB181 /* WidgetTRTExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40E61DAA29EA176E006DB181 /* Build configuration list for PBXNativeTarget "WidgetTRTExtension" */;
+			buildPhases = (
+				40E61D9A29EA176D006DB181 /* Sources */,
+				40E61D9B29EA176D006DB181 /* Frameworks */,
+				40E61D9C29EA176D006DB181 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Task Routine Tracker";
+			name = WidgetTRTExtension;
 			packageProductDependencies = (
-				40CE1457293B100800462D62 /* TroutLib */,
-				40CE145C293B113600462D62 /* Compactor */,
-				40BD218E293FDD0500B17BEA /* TroutLib */,
-				40A1A8C8294550620042966C /* TroutUI */,
-				40EBE1C829634FEA004B9189 /* TroutUI */,
+				40E61DAE29EA1782006DB181 /* TroutUI */,
 			);
-			productName = "Task Routine Tracker Watch App";
-			productReference = 40CE1403293B0DBB00462D62 /* Task Routine Tracker.app */;
-			productType = "com.apple.product-type.application";
+			productName = WidgetTRTExtension;
+			productReference = 40E61D9E29EA176D006DB181 /* WidgetTRTExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -174,7 +246,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1410;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					40CE13FC293B0DBB00462D62 = {
@@ -182,6 +254,9 @@
 					};
 					40CE1402293B0DBB00462D62 = {
 						CreatedOnToolsVersion = 14.1;
+					};
+					40E61D9D29EA176D006DB181 = {
+						CreatedOnToolsVersion = 14.3;
 					};
 				};
 			};
@@ -205,6 +280,7 @@
 			targets = (
 				40CE13FC293B0DBB00462D62 /* Task Routine Tracker Watch */,
 				40CE1402293B0DBB00462D62 /* Task Routine Tracker */,
+				40E61D9D29EA176D006DB181 /* WidgetTRTExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -228,6 +304,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		40E61D9C29EA176D006DB181 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40E61DA529EA176D006DB181 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -240,6 +324,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		40E61D9A29EA176D006DB181 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40E61DA329EA176D006DB181 /* WidgetTRT.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -247,6 +339,11 @@
 			isa = PBXTargetDependency;
 			target = 40CE1402293B0DBB00462D62 /* Task Routine Tracker */;
 			targetProxy = 40CE1405293B0DBB00462D62 /* PBXContainerItemProxy */;
+		};
+		40E61DA829EA176D006DB181 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40E61D9D29EA176D006DB181 /* WidgetTRTExtension */;
+			targetProxy = 40E61DA729EA176D006DB181 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -303,7 +400,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Sources/Info.plist;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -359,7 +456,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = Sources/Info.plist;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = org.openalloc.trout.watch;
@@ -371,12 +468,13 @@
 		40CE1414293B0DBC00462D62 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = Sources/App.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Sources/Preview Content\"";
 				DEVELOPMENT_TEAM = J735QC5U38;
 				ENABLE_PREVIEWS = YES;
@@ -389,7 +487,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = org.openalloc.trout.watch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -404,12 +502,13 @@
 		40CE1415293B0DBC00462D62 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = Sources/App.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"Sources/Preview Content\"";
 				DEVELOPMENT_TEAM = J735QC5U38;
 				ENABLE_PREVIEWS = YES;
@@ -422,7 +521,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = org.openalloc.trout.watch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -440,11 +539,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = J735QC5U38;
 				INFOPLIST_FILE = Sources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Task Routine Tracker";
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = org.openalloc.trout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -457,16 +556,79 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = J735QC5U38;
 				INFOPLIST_FILE = Sources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Task Routine Tracker";
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = org.openalloc.trout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		40E61DAB29EA176E006DB181 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WidgetTRTExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = J735QC5U38;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetTRT/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WidgetTRT;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = org.openalloc.trout.watch.WidgetTRT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		40E61DAC29EA176E006DB181 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = WidgetTRTExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = J735QC5U38;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetTRT/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = WidgetTRT;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = org.openalloc.trout.watch.WidgetTRT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
 			};
 			name = Release;
 		};
@@ -496,6 +658,15 @@
 			buildConfigurations = (
 				40CE1418293B0DBC00462D62 /* Debug */,
 				40CE1419293B0DBC00462D62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40E61DAA29EA176E006DB181 /* Build configuration list for PBXNativeTarget "WidgetTRTExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40E61DAB29EA176E006DB181 /* Debug */,
+				40E61DAC29EA176E006DB181 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -539,18 +710,13 @@
 			package = 40BD218D293FDD0500B17BEA /* XCRemoteSwiftPackageReference "TroutLib" */;
 			productName = TroutLib;
 		};
-		40CE1457293B100800462D62 /* TroutLib */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = TroutLib;
-		};
 		40CE145C293B113600462D62 /* Compactor */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 40CE145B293B113600462D62 /* XCRemoteSwiftPackageReference "SwiftCompactor" */;
 			productName = Compactor;
 		};
-		40EBE1C829634FEA004B9189 /* TroutUI */ = {
+		40E61DAE29EA1782006DB181 /* TroutUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 40EBE1C729634FEA004B9189 /* XCRemoteSwiftPackageReference "TroutUI" */;
 			productName = TroutUI;
 		};
 /* End XCSwiftPackageProductDependency section */
