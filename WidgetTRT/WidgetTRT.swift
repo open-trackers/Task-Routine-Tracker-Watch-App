@@ -14,6 +14,7 @@ import WidgetKit
 import TroutLib
 import TroutUI
 
+@main
 struct WidgetTRT: Widget {
     let kind: String = "WidgetTRT"
 
@@ -29,7 +30,7 @@ struct WidgetTRT: Widget {
 
 struct WidgetTRT_Previews: PreviewProvider {
     static var previews: some View {
-        let entry = WidgetEntry(name: "TODO", timeInterval: 1000)
+        let entry = WidgetEntry(name: "Blah", imageName: nil, timeInterval: 1000, color: nil)
         return WidgetView(entry: entry)
             .accentColor(.blue)
             .previewContext(WidgetPreviewContext(family: .accessoryCircular))
