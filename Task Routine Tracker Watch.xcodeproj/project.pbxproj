@@ -14,7 +14,6 @@
 		40CE1404293B0DBB00462D62 /* Task Routine Tracker.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 40CE1403293B0DBB00462D62 /* Task Routine Tracker.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		40CE1409293B0DBB00462D62 /* WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE1408293B0DBB00462D62 /* WatchApp.swift */; };
 		40CE140D293B0DBC00462D62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40CE140C293B0DBC00462D62 /* Assets.xcassets */; };
-		40CE1458293B100800462D62 /* TroutLib in Frameworks */ = {isa = PBXBuildFile; productRef = 40CE1457293B100800462D62 /* TroutLib */; };
 		40CE145D293B113600462D62 /* Compactor in Frameworks */ = {isa = PBXBuildFile; productRef = 40CE145C293B113600462D62 /* Compactor */; };
 		40CE14B0293B153700462D62 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CE1490293B153700462D62 /* ContentView.swift */; };
 		40CE14C6293B153700462D62 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40CE14AB293B153700462D62 /* Preview Assets.xcassets */; };
@@ -24,7 +23,6 @@
 		40E61DA529EA176D006DB181 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40E61DA429EA176D006DB181 /* Assets.xcassets */; };
 		40E61DA929EA176D006DB181 /* WidgetTRTExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 40E61D9E29EA176D006DB181 /* WidgetTRTExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		40E61DAF29EA1782006DB181 /* TroutUI in Frameworks */ = {isa = PBXBuildFile; productRef = 40E61DAE29EA1782006DB181 /* TroutUI */; };
-		40EBE1C929634FEA004B9189 /* TroutUI in Frameworks */ = {isa = PBXBuildFile; productRef = 40EBE1C829634FEA004B9189 /* TroutUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,11 +92,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40CE1458293B100800462D62 /* TroutLib in Frameworks */,
 				40BD218F293FDD0500B17BEA /* TroutLib in Frameworks */,
 				40A1A8C9294550620042966C /* TroutUI in Frameworks */,
 				40CE145D293B113600462D62 /* Compactor in Frameworks */,
-				40EBE1C929634FEA004B9189 /* TroutUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,8 +162,8 @@
 				40CE14AB293B153700462D62 /* Preview Assets.xcassets */,
 			);
 			name = "Preview Content";
-			path = "../../../_archive/_watchapp_archive/OldStuff/Source/Preview Content";
-			sourceTree = "<group>";
+			path = "Sources/Preview Content";
+			sourceTree = SOURCE_ROOT;
 		};
 		40E61DA129EA176D006DB181 /* WidgetTRT */ = {
 			isa = PBXGroup;
@@ -215,11 +211,9 @@
 			);
 			name = "Task Routine Tracker";
 			packageProductDependencies = (
-				40CE1457293B100800462D62 /* TroutLib */,
 				40CE145C293B113600462D62 /* Compactor */,
 				40BD218E293FDD0500B17BEA /* TroutLib */,
 				40A1A8C8294550620042966C /* TroutUI */,
-				40EBE1C829634FEA004B9189 /* TroutUI */,
 			);
 			productName = "Task Routine Tracker Watch App";
 			productReference = 40CE1403293B0DBB00462D62 /* Task Routine Tracker.app */;
@@ -716,10 +710,6 @@
 			package = 40BD218D293FDD0500B17BEA /* XCRemoteSwiftPackageReference "TroutLib" */;
 			productName = TroutLib;
 		};
-		40CE1457293B100800462D62 /* TroutLib */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = TroutLib;
-		};
 		40CE145C293B113600462D62 /* Compactor */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 40CE145B293B113600462D62 /* XCRemoteSwiftPackageReference "SwiftCompactor" */;
@@ -727,11 +717,6 @@
 		};
 		40E61DAE29EA1782006DB181 /* TroutUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = TroutUI;
-		};
-		40EBE1C829634FEA004B9189 /* TroutUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 40EBE1C729634FEA004B9189 /* XCRemoteSwiftPackageReference "TroutUI" */;
 			productName = TroutUI;
 		};
 /* End XCSwiftPackageProductDependency section */
